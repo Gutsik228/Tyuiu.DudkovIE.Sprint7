@@ -12,49 +12,90 @@ namespace Tyuiu.DudkovIE.Sprint7
 {
     public partial class FormMain : Form
     {
-        bool SideBarExpand;
+        private Button currentButton;
+        private Random random;
+        private int tempIndex;
+        private Form ActiveForm;
         public FormMain()
         {
             InitializeComponent();
+            random = new Random();
         }
 
-        private void TimerSideBar_DIE_Tick(object sender, EventArgs e)
+        private Color SelectThemeColor()
         {
-            if (SideBarExpand)
+            int index = random.Next(ThemeColor.ColorList.Count);
+            while (tempIndex == index)
             {
-                PanelSideBar_DIE.Width -= 10;
-                if (PanelSideBar_DIE.Width == PanelSideBar_DIE.MinimumSize.Width)
+                index = random.Next(ThemeColor.ColorList.Count);
+            }
+            tempIndex = index;
+            string color = ThemeColor.ColorList[index];
+            return ColorTranslator.FromHtml(color);
+        }
+
+        private void ActivateButton(object button)
+        {
+            if (button != null)
+            {
+                if(currentButton == (Button)button)
                 {
-                    SideBarExpand = false;
-                    TimerSideBar_DIE.Stop();
+                    DisableButton();
+
+                    Color color = SelectThemeColor();
+                    currentButton = (Button)button;
+                    currentButton.BackColor = Color.White;
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+                    Panel_TitleBar_DIE.BackColor = color;
+                    Panel_Logo_DIE.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                 }
             }
+        }
 
-            else
+        private void DisableButton()
+        {
+            foreach(Control previousButton in Panel_Main_DIE.Controls)
             {
-                PanelSideBar_DIE.Width += 10;
-                if (PanelSideBar_DIE.Width == PanelSideBar_DIE.MaximumSize.Width)
+                if(previousButton.GetType() == typeof(Button))
                 {
-                    SideBarExpand = true;
-                    TimerSideBar_DIE.Stop();
+                    previousButton.BackColor = Color.FromArgb(51, 51, 76);
+                    previousButton.ForeColor = Color.White;
+                    previousButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.0F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 }
             }
-            
         }
 
-        private void Button_Menu_DIE_Click(object sender, EventArgs e)
+        private void OpenChildForm(Form childForm, object button)
         {
-            TimerSideBar_DIE.Start();
+            if(ActiveForm != null)
+            {
+                ActiveForm.Close();
+            }
+            ActivateButton(button);
+            ActiveForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.Panel_DekstopPanel_DIE.Controls.Add(childForm);
+            this.Panel_DekstopPanel_DIE.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            Label_Products_DIE.Text = childForm.Text;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Button_Home_DIE_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void PanelSideBar_DIE_Paint(object sender, PaintEventArgs e)
+        private void Button_AboutUs_DIE_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
+        }
 
+        private void Button_Help_DIE_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormHelp(), sender);
         }
     }
 }

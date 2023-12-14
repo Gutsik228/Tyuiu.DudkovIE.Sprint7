@@ -85,7 +85,7 @@ namespace Tyuiu.DudkovIE.Sprint7
 
         private void Button_Home_DIE_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Forms.FormProducts(), sender);
         }
 
         private void Button_AboutUs_DIE_Click(object sender, EventArgs e)

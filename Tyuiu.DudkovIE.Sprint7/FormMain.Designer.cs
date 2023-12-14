@@ -37,9 +37,9 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Button_AboutUs_DIE = new System.Windows.Forms.Button();
             this.Button_Home_DIE = new System.Windows.Forms.Button();
             this.Panel_Logo_DIE = new System.Windows.Forms.Panel();
+            this.Label_Name_DIE = new System.Windows.Forms.Label();
             this.Panel_TitleBar_DIE = new System.Windows.Forms.Panel();
             this.Label_Products_DIE = new System.Windows.Forms.Label();
-            this.Label_Name_DIE = new System.Windows.Forms.Label();
             this.Panel_DekstopPanel_DIE = new System.Windows.Forms.Panel();
             this.Panel_Main_DIE.SuspendLayout();
             this.Panel_Logo_DIE.SuspendLayout();
@@ -52,7 +52,7 @@ namespace Tyuiu.DudkovIE.Sprint7
             // 
             // Panel_Main_DIE
             // 
-            this.Panel_Main_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.Panel_Main_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(81)))));
             this.Panel_Main_DIE.Controls.Add(this.Button_Help_DIE);
             this.Panel_Main_DIE.Controls.Add(this.Button_AboutUs_DIE);
             this.Panel_Main_DIE.Controls.Add(this.Button_Home_DIE);
@@ -125,13 +125,24 @@ namespace Tyuiu.DudkovIE.Sprint7
             // 
             // Panel_Logo_DIE
             // 
-            this.Panel_Logo_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.Panel_Logo_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
             this.Panel_Logo_DIE.Controls.Add(this.Label_Name_DIE);
             this.Panel_Logo_DIE.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Logo_DIE.Location = new System.Drawing.Point(0, 0);
             this.Panel_Logo_DIE.Name = "Panel_Logo_DIE";
             this.Panel_Logo_DIE.Size = new System.Drawing.Size(220, 80);
             this.Panel_Logo_DIE.TabIndex = 0;
+            // 
+            // Label_Name_DIE
+            // 
+            this.Label_Name_DIE.AutoSize = true;
+            this.Label_Name_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Label_Name_DIE.ForeColor = System.Drawing.Color.White;
+            this.Label_Name_DIE.Location = new System.Drawing.Point(68, 28);
+            this.Label_Name_DIE.Name = "Label_Name_DIE";
+            this.Label_Name_DIE.Size = new System.Drawing.Size(129, 22);
+            this.Label_Name_DIE.TabIndex = 0;
+            this.Label_Name_DIE.Text = "OPT Company";
             // 
             // Panel_TitleBar_DIE
             // 
@@ -155,19 +166,9 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Label_Products_DIE.TabIndex = 0;
             this.Label_Products_DIE.Text = "ТОВАРЫ";
             // 
-            // Label_Name_DIE
-            // 
-            this.Label_Name_DIE.AutoSize = true;
-            this.Label_Name_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Label_Name_DIE.ForeColor = System.Drawing.Color.White;
-            this.Label_Name_DIE.Location = new System.Drawing.Point(68, 28);
-            this.Label_Name_DIE.Name = "Label_Name_DIE";
-            this.Label_Name_DIE.Size = new System.Drawing.Size(129, 22);
-            this.Label_Name_DIE.TabIndex = 0;
-            this.Label_Name_DIE.Text = "OPT Company";
-            // 
             // Panel_DekstopPanel_DIE
             // 
+            this.Panel_DekstopPanel_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
             this.Panel_DekstopPanel_DIE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_DekstopPanel_DIE.Location = new System.Drawing.Point(220, 80);
             this.Panel_DekstopPanel_DIE.Name = "Panel_DekstopPanel_DIE";

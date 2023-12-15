@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Tyuiu.DudkovIE.Sprint7
 {
+    
     public partial class FormMain : Form
     {
         private Button currentButton;

@@ -151,7 +151,7 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_TitleBar_DIE.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_TitleBar_DIE.Location = new System.Drawing.Point(220, 0);
             this.Panel_TitleBar_DIE.Name = "Panel_TitleBar_DIE";
-            this.Panel_TitleBar_DIE.Size = new System.Drawing.Size(998, 80);
+            this.Panel_TitleBar_DIE.Size = new System.Drawing.Size(784, 80);
             this.Panel_TitleBar_DIE.TabIndex = 1;
             // 
             // Label_Products_DIE
@@ -160,7 +160,7 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Label_Products_DIE.AutoSize = true;
             this.Label_Products_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Label_Products_DIE.ForeColor = System.Drawing.Color.White;
-            this.Label_Products_DIE.Location = new System.Drawing.Point(430, 25);
+            this.Label_Products_DIE.Location = new System.Drawing.Point(323, 25);
             this.Label_Products_DIE.Name = "Label_Products_DIE";
             this.Label_Products_DIE.Size = new System.Drawing.Size(92, 25);
             this.Label_Products_DIE.TabIndex = 0;
@@ -172,7 +172,7 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_DekstopPanel_DIE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_DekstopPanel_DIE.Location = new System.Drawing.Point(220, 80);
             this.Panel_DekstopPanel_DIE.Name = "Panel_DekstopPanel_DIE";
-            this.Panel_DekstopPanel_DIE.Size = new System.Drawing.Size(998, 470);
+            this.Panel_DekstopPanel_DIE.Size = new System.Drawing.Size(784, 470);
             this.Panel_DekstopPanel_DIE.TabIndex = 2;
             // 
             // FormMain
@@ -180,12 +180,16 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1218, 550);
+            this.ClientSize = new System.Drawing.Size(1004, 550);
             this.Controls.Add(this.Panel_DekstopPanel_DIE);
             this.Controls.Add(this.Panel_TitleBar_DIE);
             this.Controls.Add(this.Panel_Main_DIE);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "OPT Company";
             this.Panel_Main_DIE.ResumeLayout(false);
             this.Panel_Logo_DIE.ResumeLayout(false);
             this.Panel_Logo_DIE.PerformLayout();

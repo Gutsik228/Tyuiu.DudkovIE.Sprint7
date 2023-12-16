@@ -29,13 +29,11 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView_ProductsInfo_DIE = new System.Windows.Forms.DataGridView();
             this.button_DeleteProduct = new System.Windows.Forms.Button();
             this.button_CorrectProduct = new System.Windows.Forms.Button();
-            this.comboBox_Category_DIE = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_Price_DIE = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,27 +44,20 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_ID_DIE = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button_AddProduct_DIE = new System.Windows.Forms.Button();
+            this.button_OpenFile_DIE = new System.Windows.Forms.Button();
+            this.button_SaveFile_DIE = new System.Windows.Forms.Button();
+            this.textBox_Category_DIE = new System.Windows.Forms.TextBox();
+            this.textBox_Search_DIE = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(421, 32);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 21);
-            this.button4.TabIndex = 51;
-            this.button4.Text = "ПЕРЕМЕШАТЬ";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(294, 32);
+            this.comboBox1.Location = new System.Drawing.Point(462, 32);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 50;
@@ -76,7 +67,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(310, 9);
+            this.label6.Location = new System.Drawing.Point(478, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 49;
@@ -87,7 +78,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.dataGridView_ProductsInfo_DIE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ProductsInfo_DIE.Location = new System.Drawing.Point(294, 59);
             this.dataGridView_ProductsInfo_DIE.Name = "dataGridView_ProductsInfo_DIE";
-            this.dataGridView_ProductsInfo_DIE.Size = new System.Drawing.Size(443, 383);
+            this.dataGridView_ProductsInfo_DIE.Size = new System.Drawing.Size(560, 383);
             this.dataGridView_ProductsInfo_DIE.TabIndex = 48;
             // 
             // button_DeleteProduct
@@ -95,9 +86,9 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_DeleteProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_DeleteProduct.ForeColor = System.Drawing.Color.White;
-            this.button_DeleteProduct.Location = new System.Drawing.Point(180, 316);
+            this.button_DeleteProduct.Location = new System.Drawing.Point(162, 316);
             this.button_DeleteProduct.Name = "button_DeleteProduct";
-            this.button_DeleteProduct.Size = new System.Drawing.Size(78, 48);
+            this.button_DeleteProduct.Size = new System.Drawing.Size(108, 48);
             this.button_DeleteProduct.TabIndex = 47;
             this.button_DeleteProduct.Text = "УДАЛИТЬ";
             this.button_DeleteProduct.UseVisualStyleBackColor = true;
@@ -107,22 +98,12 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_CorrectProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_CorrectProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CorrectProduct.ForeColor = System.Drawing.Color.White;
-            this.button_CorrectProduct.Location = new System.Drawing.Point(96, 316);
+            this.button_CorrectProduct.Location = new System.Drawing.Point(600, 5);
             this.button_CorrectProduct.Name = "button_CorrectProduct";
-            this.button_CorrectProduct.Size = new System.Drawing.Size(78, 48);
+            this.button_CorrectProduct.Size = new System.Drawing.Size(137, 48);
             this.button_CorrectProduct.TabIndex = 46;
             this.button_CorrectProduct.Text = "РЕДАКТИРОВАТЬ";
             this.button_CorrectProduct.UseVisualStyleBackColor = true;
-            // 
-            // comboBox_Category_DIE
-            // 
-            this.comboBox_Category_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
-            this.comboBox_Category_DIE.ForeColor = System.Drawing.Color.White;
-            this.comboBox_Category_DIE.FormattingEnabled = true;
-            this.comboBox_Category_DIE.Location = new System.Drawing.Point(34, 272);
-            this.comboBox_Category_DIE.Name = "comboBox_Category_DIE";
-            this.comboBox_Category_DIE.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_Category_DIE.TabIndex = 44;
             // 
             // label5
             // 
@@ -138,6 +119,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // textBox_Price_DIE
             // 
             this.textBox_Price_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_Price_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_Price_DIE.Location = new System.Drawing.Point(39, 213);
             this.textBox_Price_DIE.Name = "textBox_Price_DIE";
             this.textBox_Price_DIE.Size = new System.Drawing.Size(100, 20);
@@ -157,6 +139,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // textBox_QualitiyProduct_DIE
             // 
             this.textBox_QualitiyProduct_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_QualitiyProduct_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_QualitiyProduct_DIE.Location = new System.Drawing.Point(39, 157);
             this.textBox_QualitiyProduct_DIE.Name = "textBox_QualitiyProduct_DIE";
             this.textBox_QualitiyProduct_DIE.Size = new System.Drawing.Size(100, 20);
@@ -176,6 +159,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // textBox_NameOfProduct
             // 
             this.textBox_NameOfProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_NameOfProduct.ForeColor = System.Drawing.Color.White;
             this.textBox_NameOfProduct.Location = new System.Drawing.Point(39, 99);
             this.textBox_NameOfProduct.Name = "textBox_NameOfProduct";
             this.textBox_NameOfProduct.Size = new System.Drawing.Size(100, 20);
@@ -195,6 +179,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // textBox_ID_DIE
             // 
             this.textBox_ID_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_ID_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_ID_DIE.Location = new System.Drawing.Point(39, 41);
             this.textBox_ID_DIE.Name = "textBox_ID_DIE";
             this.textBox_ID_DIE.Size = new System.Drawing.Size(100, 20);
@@ -218,26 +203,82 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_AddProduct_DIE.ForeColor = System.Drawing.Color.White;
             this.button_AddProduct_DIE.Location = new System.Drawing.Point(12, 316);
             this.button_AddProduct_DIE.Name = "button_AddProduct_DIE";
-            this.button_AddProduct_DIE.Size = new System.Drawing.Size(78, 48);
+            this.button_AddProduct_DIE.Size = new System.Drawing.Size(103, 48);
             this.button_AddProduct_DIE.TabIndex = 45;
             this.button_AddProduct_DIE.Text = "ДОБАВИТЬ";
             this.button_AddProduct_DIE.UseVisualStyleBackColor = true;
             this.button_AddProduct_DIE.Click += new System.EventHandler(this.button_AddProduct_DIE_Click);
+            // 
+            // button_OpenFile_DIE
+            // 
+            this.button_OpenFile_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_OpenFile_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_OpenFile_DIE.ForeColor = System.Drawing.Color.White;
+            this.button_OpenFile_DIE.Location = new System.Drawing.Point(12, 390);
+            this.button_OpenFile_DIE.Name = "button_OpenFile_DIE";
+            this.button_OpenFile_DIE.Size = new System.Drawing.Size(103, 48);
+            this.button_OpenFile_DIE.TabIndex = 52;
+            this.button_OpenFile_DIE.Text = "ОТКРЫТЬ ФАЙЛ";
+            this.button_OpenFile_DIE.UseVisualStyleBackColor = true;
+            // 
+            // button_SaveFile_DIE
+            // 
+            this.button_SaveFile_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_SaveFile_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_SaveFile_DIE.ForeColor = System.Drawing.Color.White;
+            this.button_SaveFile_DIE.Location = new System.Drawing.Point(162, 390);
+            this.button_SaveFile_DIE.Name = "button_SaveFile_DIE";
+            this.button_SaveFile_DIE.Size = new System.Drawing.Size(108, 48);
+            this.button_SaveFile_DIE.TabIndex = 53;
+            this.button_SaveFile_DIE.Text = "СОХРАНИТЬ ФАЙЛ";
+            this.button_SaveFile_DIE.UseVisualStyleBackColor = true;
+            // 
+            // textBox_Category_DIE
+            // 
+            this.textBox_Category_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_Category_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_Category_DIE.Location = new System.Drawing.Point(39, 272);
+            this.textBox_Category_DIE.Name = "textBox_Category_DIE";
+            this.textBox_Category_DIE.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Category_DIE.TabIndex = 54;
+            // 
+            // textBox_Search_DIE
+            // 
+            this.textBox_Search_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_Search_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_Search_DIE.Location = new System.Drawing.Point(313, 32);
+            this.textBox_Search_DIE.Name = "textBox_Search_DIE";
+            this.textBox_Search_DIE.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Search_DIE.TabIndex = 56;
+            this.textBox_Search_DIE.Text = "Поиск...";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(290, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 20);
+            this.label7.TabIndex = 55;
             // 
             // FormProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(866, 450);
+            this.Controls.Add(this.textBox_Search_DIE);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox_Category_DIE);
+            this.Controls.Add(this.button_SaveFile_DIE);
+            this.Controls.Add(this.button_OpenFile_DIE);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView_ProductsInfo_DIE);
             this.Controls.Add(this.button_DeleteProduct);
             this.Controls.Add(this.button_CorrectProduct);
             this.Controls.Add(this.button_AddProduct_DIE);
-            this.Controls.Add(this.comboBox_Category_DIE);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_Price_DIE);
             this.Controls.Add(this.label4);
@@ -256,14 +297,11 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView_ProductsInfo_DIE;
         private System.Windows.Forms.Button button_DeleteProduct;
         private System.Windows.Forms.Button button_CorrectProduct;
-        private System.Windows.Forms.ComboBox comboBox_Category_DIE;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_Price_DIE;
         private System.Windows.Forms.Label label4;
@@ -274,5 +312,10 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.TextBox textBox_ID_DIE;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_AddProduct_DIE;
+        private System.Windows.Forms.Button button_OpenFile_DIE;
+        private System.Windows.Forms.Button button_SaveFile_DIE;
+        private System.Windows.Forms.TextBox textBox_Category_DIE;
+        private System.Windows.Forms.TextBox textBox_Search_DIE;
+        private System.Windows.Forms.Label label7;
     }
 }

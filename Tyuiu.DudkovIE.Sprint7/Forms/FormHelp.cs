@@ -17,7 +17,8 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             InitializeComponent();
         }
 
-        private void panel_SupportButtons_DIE_Paint(object sender, PaintEventArgs e)
+    
+        private void FormHelp_Load(object sender, EventArgs e)
         {
 
         }

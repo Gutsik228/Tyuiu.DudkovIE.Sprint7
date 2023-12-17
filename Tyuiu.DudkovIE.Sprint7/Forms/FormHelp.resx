@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox_SupportTitle_DIE.Text" xml:space="preserve">
+    <value>ЗАПОЛНЕНИЕ ДАННЫХ ОБЯЗАТЕЛЬНО ДЛЯ КАЖДОГО ПАРАМЕТРА, СТРОГИЕ ПРАВИЛА, СТРОГИЙ ЗАКОН , СТРОГИЙ ГОСТ, ЕСЛИ НЕ ВВЕДЕТЕ КАКИЕ ЛИБО ДАННЫЕ ИЛИ НЕ ВВЕДЕТЕ НЕПРАВИЛЬНО, ПРОГРАММА РАБОТАТЬ НЕ БУДЕТ, СОБЛЮДАЙТЕ ПРАВИЛА!!!
+ДЛЯ ID - ВВОДИТЬ НОМЕР(ЦИФРЫ), ДЛЯ НАЗВАНИЯ ПРОДУКТА - ВВОДИТЬ СТРОКУ(БУКВЫ, СЛОВА), ДЛЯ КАЧЕСТВА ТОВАРА - ВВОДИТЬ  СТРОКУ(БУКВЫ, СЛОВА), ДЛЯ ЦЕНЫ - ВВОДИТЬ ЧИСЛО, ДЛЯ КАТЕГОРИИ - ВВОДИТЬ СТРОКУ(БУКВЫ, СЛОВА)!!!</value>
+  </data>
 </root>

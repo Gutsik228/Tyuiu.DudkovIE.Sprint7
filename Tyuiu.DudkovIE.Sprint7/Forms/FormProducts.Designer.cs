@@ -78,7 +78,8 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.dataGridView_ProductsInfo_DIE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ProductsInfo_DIE.Location = new System.Drawing.Point(294, 59);
             this.dataGridView_ProductsInfo_DIE.Name = "dataGridView_ProductsInfo_DIE";
-            this.dataGridView_ProductsInfo_DIE.Size = new System.Drawing.Size(560, 383);
+            this.dataGridView_ProductsInfo_DIE.ReadOnly = true;
+            this.dataGridView_ProductsInfo_DIE.Size = new System.Drawing.Size(539, 383);
             this.dataGridView_ProductsInfo_DIE.TabIndex = 48;
             // 
             // button_DeleteProduct
@@ -220,6 +221,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_OpenFile_DIE.TabIndex = 52;
             this.button_OpenFile_DIE.Text = "ОТКРЫТЬ ФАЙЛ";
             this.button_OpenFile_DIE.UseVisualStyleBackColor = true;
+            this.button_OpenFile_DIE.Click += new System.EventHandler(this.button_OpenFile_DIE_Click);
             // 
             // button_SaveFile_DIE
             // 
@@ -232,6 +234,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_SaveFile_DIE.TabIndex = 53;
             this.button_SaveFile_DIE.Text = "СОХРАНИТЬ ФАЙЛ";
             this.button_SaveFile_DIE.UseVisualStyleBackColor = true;
+            this.button_SaveFile_DIE.Click += new System.EventHandler(this.button_SaveFile_DIE_Click);
             // 
             // textBox_Category_DIE
             // 

@@ -29,6 +29,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHelp));
             this.textBox_SupportCategory_DIE = new System.Windows.Forms.TextBox();
             this.label_SupportCategory_DIE = new System.Windows.Forms.Label();
             this.textBox_SupportPrice_DIE = new System.Windows.Forms.TextBox();
@@ -40,6 +41,10 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SupportID_DIE = new System.Windows.Forms.TextBox();
             this.label_SupportID_DIE = new System.Windows.Forms.Label();
             this.panel_InpuData_DIE = new System.Windows.Forms.Panel();
+            this.textBox2_SupportPrice_DIE = new System.Windows.Forms.TextBox();
+            this.textBox2_SupportQualitiyProduct_DIE = new System.Windows.Forms.TextBox();
+            this.textBox2_SupportNameOfProduct = new System.Windows.Forms.TextBox();
+            this.textBox2_SupportID_DIE = new System.Windows.Forms.TextBox();
             this.textBox_TitleInputData_DIE = new System.Windows.Forms.TextBox();
             this.panel_SupportButtons_DIE = new System.Windows.Forms.Panel();
             this.textBox_SupportSaveFile_DIE = new System.Windows.Forms.TextBox();
@@ -51,14 +56,12 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_ExampleAdd_DIE = new System.Windows.Forms.Button();
             this.button_ExampleDeleteProduct = new System.Windows.Forms.Button();
             this.button_ExampleOpenFile_DIE = new System.Windows.Forms.Button();
-            this.textBox2_SupportID_DIE = new System.Windows.Forms.TextBox();
-            this.textBox2_SupportNameOfProduct = new System.Windows.Forms.TextBox();
-            this.textBox2_SupportQualitiyProduct_DIE = new System.Windows.Forms.TextBox();
-            this.textBox2_SupportPrice_DIE = new System.Windows.Forms.TextBox();
             this.textBox2_SupportCategory_DIE = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox_SupportTitle_DIE = new System.Windows.Forms.TextBox();
             this.panel_InpuData_DIE.SuspendLayout();
             this.panel_SupportButtons_DIE.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox_SupportCategory_DIE
@@ -67,6 +70,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SupportCategory_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_SupportCategory_DIE.Location = new System.Drawing.Point(24, 294);
             this.textBox_SupportCategory_DIE.Name = "textBox_SupportCategory_DIE";
+            this.textBox_SupportCategory_DIE.ReadOnly = true;
             this.textBox_SupportCategory_DIE.Size = new System.Drawing.Size(100, 20);
             this.textBox_SupportCategory_DIE.TabIndex = 66;
             // 
@@ -87,6 +91,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SupportPrice_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_SupportPrice_DIE.Location = new System.Drawing.Point(24, 235);
             this.textBox_SupportPrice_DIE.Name = "textBox_SupportPrice_DIE";
+            this.textBox_SupportPrice_DIE.ReadOnly = true;
             this.textBox_SupportPrice_DIE.Size = new System.Drawing.Size(100, 20);
             this.textBox_SupportPrice_DIE.TabIndex = 64;
             // 
@@ -107,6 +112,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SupportQualitiyProduct_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_SupportQualitiyProduct_DIE.Location = new System.Drawing.Point(24, 179);
             this.textBox_SupportQualitiyProduct_DIE.Name = "textBox_SupportQualitiyProduct_DIE";
+            this.textBox_SupportQualitiyProduct_DIE.ReadOnly = true;
             this.textBox_SupportQualitiyProduct_DIE.Size = new System.Drawing.Size(100, 20);
             this.textBox_SupportQualitiyProduct_DIE.TabIndex = 62;
             // 
@@ -127,6 +133,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SupportNameOfProduct.ForeColor = System.Drawing.Color.White;
             this.textBox_SupportNameOfProduct.Location = new System.Drawing.Point(24, 121);
             this.textBox_SupportNameOfProduct.Name = "textBox_SupportNameOfProduct";
+            this.textBox_SupportNameOfProduct.ReadOnly = true;
             this.textBox_SupportNameOfProduct.Size = new System.Drawing.Size(100, 20);
             this.textBox_SupportNameOfProduct.TabIndex = 60;
             // 
@@ -147,6 +154,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SupportID_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_SupportID_DIE.Location = new System.Drawing.Point(24, 63);
             this.textBox_SupportID_DIE.Name = "textBox_SupportID_DIE";
+            this.textBox_SupportID_DIE.ReadOnly = true;
             this.textBox_SupportID_DIE.Size = new System.Drawing.Size(100, 20);
             this.textBox_SupportID_DIE.TabIndex = 58;
             // 
@@ -179,10 +187,53 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.panel_InpuData_DIE.Controls.Add(this.textBox_SupportNameOfProduct);
             this.panel_InpuData_DIE.Controls.Add(this.textBox_SupportQualitiyProduct_DIE);
             this.panel_InpuData_DIE.Controls.Add(this.label_SupportQuality_DIE);
-            this.panel_InpuData_DIE.Location = new System.Drawing.Point(371, 85);
+            this.panel_InpuData_DIE.Location = new System.Drawing.Point(371, 82);
             this.panel_InpuData_DIE.Name = "panel_InpuData_DIE";
-            this.panel_InpuData_DIE.Size = new System.Drawing.Size(417, 339);
+            this.panel_InpuData_DIE.Size = new System.Drawing.Size(430, 369);
             this.panel_InpuData_DIE.TabIndex = 67;
+            // 
+            // textBox2_SupportPrice_DIE
+            // 
+            this.textBox2_SupportPrice_DIE.Location = new System.Drawing.Point(156, 208);
+            this.textBox2_SupportPrice_DIE.Multiline = true;
+            this.textBox2_SupportPrice_DIE.Name = "textBox2_SupportPrice_DIE";
+            this.textBox2_SupportPrice_DIE.ReadOnly = true;
+            this.textBox2_SupportPrice_DIE.Size = new System.Drawing.Size(258, 66);
+            this.textBox2_SupportPrice_DIE.TabIndex = 69;
+            this.textBox2_SupportPrice_DIE.Text = "Добавить цену для товара, если товар единичный , то цена за штуку, если товар вес" +
+    "овой, то цена за 1 кг, В МАГАЗИНЕ ЯЙЦА ПО 200 РУБ";
+            // 
+            // textBox2_SupportQualitiyProduct_DIE
+            // 
+            this.textBox2_SupportQualitiyProduct_DIE.Location = new System.Drawing.Point(156, 154);
+            this.textBox2_SupportQualitiyProduct_DIE.Multiline = true;
+            this.textBox2_SupportQualitiyProduct_DIE.Name = "textBox2_SupportQualitiyProduct_DIE";
+            this.textBox2_SupportQualitiyProduct_DIE.ReadOnly = true;
+            this.textBox2_SupportQualitiyProduct_DIE.Size = new System.Drawing.Size(258, 48);
+            this.textBox2_SupportQualitiyProduct_DIE.TabIndex = 68;
+            this.textBox2_SupportQualitiyProduct_DIE.Text = "Добавить качество продукта(Гнилое, тухлое, более менее, есть можно, вкусненькое, " +
+    "прямо с куста ультра свежее";
+            // 
+            // textBox2_SupportNameOfProduct
+            // 
+            this.textBox2_SupportNameOfProduct.Location = new System.Drawing.Point(156, 100);
+            this.textBox2_SupportNameOfProduct.Multiline = true;
+            this.textBox2_SupportNameOfProduct.Name = "textBox2_SupportNameOfProduct";
+            this.textBox2_SupportNameOfProduct.ReadOnly = true;
+            this.textBox2_SupportNameOfProduct.Size = new System.Drawing.Size(258, 48);
+            this.textBox2_SupportNameOfProduct.TabIndex = 67;
+            this.textBox2_SupportNameOfProduct.Text = "Добавить название продукта( хлебушке, яблочко, яички, морковка)";
+            // 
+            // textBox2_SupportID_DIE
+            // 
+            this.textBox2_SupportID_DIE.Location = new System.Drawing.Point(156, 47);
+            this.textBox2_SupportID_DIE.Multiline = true;
+            this.textBox2_SupportID_DIE.Name = "textBox2_SupportID_DIE";
+            this.textBox2_SupportID_DIE.ReadOnly = true;
+            this.textBox2_SupportID_DIE.Size = new System.Drawing.Size(258, 48);
+            this.textBox2_SupportID_DIE.TabIndex = 60;
+            this.textBox2_SupportID_DIE.Text = "Добавить ID для продукта. ID — уникальный признак объекта, позволяющий отличать е" +
+    "го от других объектов";
             // 
             // textBox_TitleInputData_DIE
             // 
@@ -206,9 +257,9 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.panel_SupportButtons_DIE.Controls.Add(this.button_ExampleAdd_DIE);
             this.panel_SupportButtons_DIE.Controls.Add(this.button_ExampleDeleteProduct);
             this.panel_SupportButtons_DIE.Controls.Add(this.button_ExampleOpenFile_DIE);
-            this.panel_SupportButtons_DIE.Location = new System.Drawing.Point(12, 85);
+            this.panel_SupportButtons_DIE.Location = new System.Drawing.Point(-3, 82);
             this.panel_SupportButtons_DIE.Name = "panel_SupportButtons_DIE";
-            this.panel_SupportButtons_DIE.Size = new System.Drawing.Size(336, 339);
+            this.panel_SupportButtons_DIE.Size = new System.Drawing.Size(369, 369);
             this.panel_SupportButtons_DIE.TabIndex = 68;
             // 
             // textBox_SupportSaveFile_DIE
@@ -312,67 +363,38 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_ExampleOpenFile_DIE.Text = "ОТКРЫТЬ ФАЙЛ";
             this.button_ExampleOpenFile_DIE.UseVisualStyleBackColor = true;
             // 
-            // textBox2_SupportID_DIE
-            // 
-            this.textBox2_SupportID_DIE.Location = new System.Drawing.Point(156, 47);
-            this.textBox2_SupportID_DIE.Multiline = true;
-            this.textBox2_SupportID_DIE.Name = "textBox2_SupportID_DIE";
-            this.textBox2_SupportID_DIE.ReadOnly = true;
-            this.textBox2_SupportID_DIE.Size = new System.Drawing.Size(221, 48);
-            this.textBox2_SupportID_DIE.TabIndex = 60;
-            this.textBox2_SupportID_DIE.Text = "Добавление продукта в таблицу , по его введеным параметрам(ID, category, name, qu" +
-    "ality, price)\r\n";
-            // 
-            // textBox2_SupportNameOfProduct
-            // 
-            this.textBox2_SupportNameOfProduct.Location = new System.Drawing.Point(156, 100);
-            this.textBox2_SupportNameOfProduct.Multiline = true;
-            this.textBox2_SupportNameOfProduct.Name = "textBox2_SupportNameOfProduct";
-            this.textBox2_SupportNameOfProduct.ReadOnly = true;
-            this.textBox2_SupportNameOfProduct.Size = new System.Drawing.Size(221, 48);
-            this.textBox2_SupportNameOfProduct.TabIndex = 67;
-            this.textBox2_SupportNameOfProduct.Text = "Добавление продукта в таблицу , по его введеным параметрам(ID, category, name, qu" +
-    "ality, price)\r\n";
-            // 
-            // textBox2_SupportQualitiyProduct_DIE
-            // 
-            this.textBox2_SupportQualitiyProduct_DIE.Location = new System.Drawing.Point(156, 154);
-            this.textBox2_SupportQualitiyProduct_DIE.Multiline = true;
-            this.textBox2_SupportQualitiyProduct_DIE.Name = "textBox2_SupportQualitiyProduct_DIE";
-            this.textBox2_SupportQualitiyProduct_DIE.ReadOnly = true;
-            this.textBox2_SupportQualitiyProduct_DIE.Size = new System.Drawing.Size(221, 48);
-            this.textBox2_SupportQualitiyProduct_DIE.TabIndex = 68;
-            this.textBox2_SupportQualitiyProduct_DIE.Text = "Добавление продукта в таблицу , по его введеным параметрам(ID, category, name, qu" +
-    "ality, price)\r\n";
-            // 
-            // textBox2_SupportPrice_DIE
-            // 
-            this.textBox2_SupportPrice_DIE.Location = new System.Drawing.Point(156, 208);
-            this.textBox2_SupportPrice_DIE.Multiline = true;
-            this.textBox2_SupportPrice_DIE.Name = "textBox2_SupportPrice_DIE";
-            this.textBox2_SupportPrice_DIE.ReadOnly = true;
-            this.textBox2_SupportPrice_DIE.Size = new System.Drawing.Size(221, 48);
-            this.textBox2_SupportPrice_DIE.TabIndex = 69;
-            this.textBox2_SupportPrice_DIE.Text = "Добавление продукта в таблицу , по его введеным параметрам(ID, category, name, qu" +
-    "ality, price)\r\n";
-            // 
             // textBox2_SupportCategory_DIE
             // 
-            this.textBox2_SupportCategory_DIE.Location = new System.Drawing.Point(156, 262);
+            this.textBox2_SupportCategory_DIE.Location = new System.Drawing.Point(156, 280);
             this.textBox2_SupportCategory_DIE.Multiline = true;
             this.textBox2_SupportCategory_DIE.Name = "textBox2_SupportCategory_DIE";
             this.textBox2_SupportCategory_DIE.ReadOnly = true;
             this.textBox2_SupportCategory_DIE.Size = new System.Drawing.Size(221, 48);
-            this.textBox2_SupportCategory_DIE.TabIndex = 70;
-            this.textBox2_SupportCategory_DIE.Text = "Добавление продукта в таблицу , по его введеным параметрам(ID, category, name, qu" +
-    "ality, price)\r\n";
+            this.textBox2_SupportCategory_DIE.TabIndex = 71;
+            this.textBox2_SupportCategory_DIE.Text = "Добавить категорию для товара, чтобы классифицировать его и упростить поиск и сор" +
+    "тировку";
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 8);
+            this.panel1.Controls.Add(this.textBox_SupportTitle_DIE);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 71);
-            this.panel1.TabIndex = 69;
+            this.panel1.Size = new System.Drawing.Size(800, 74);
+            this.panel1.TabIndex = 70;
+            // 
+            // textBox_SupportTitle_DIE
+            // 
+            this.textBox_SupportTitle_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_SupportTitle_DIE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox_SupportTitle_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_SupportTitle_DIE.Location = new System.Drawing.Point(0, 0);
+            this.textBox_SupportTitle_DIE.Multiline = true;
+            this.textBox_SupportTitle_DIE.Name = "textBox_SupportTitle_DIE";
+            this.textBox_SupportTitle_DIE.ReadOnly = true;
+            this.textBox_SupportTitle_DIE.Size = new System.Drawing.Size(800, 64);
+            this.textBox_SupportTitle_DIE.TabIndex = 39;
+            this.textBox_SupportTitle_DIE.Text = resources.GetString("textBox_SupportTitle_DIE.Text");
             // 
             // FormHelp
             // 
@@ -385,10 +407,13 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.Controls.Add(this.panel_InpuData_DIE);
             this.Name = "FormHelp";
             this.Text = "FormHelp";
+            this.Load += new System.EventHandler(this.FormHelp_Load);
             this.panel_InpuData_DIE.ResumeLayout(false);
             this.panel_InpuData_DIE.PerformLayout();
             this.panel_SupportButtons_DIE.ResumeLayout(false);
             this.panel_SupportButtons_DIE.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -417,10 +442,11 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.Button button_ExampleDeleteProduct;
         private System.Windows.Forms.Button button_ExampleOpenFile_DIE;
         private System.Windows.Forms.TextBox textBox2_SupportID_DIE;
-        private System.Windows.Forms.TextBox textBox2_SupportCategory_DIE;
         private System.Windows.Forms.TextBox textBox2_SupportPrice_DIE;
         private System.Windows.Forms.TextBox textBox2_SupportQualitiyProduct_DIE;
         private System.Windows.Forms.TextBox textBox2_SupportNameOfProduct;
+        private System.Windows.Forms.TextBox textBox2_SupportCategory_DIE;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox_SupportTitle_DIE;
     }
 }

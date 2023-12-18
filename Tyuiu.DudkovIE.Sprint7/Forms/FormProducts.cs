@@ -15,6 +15,8 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
     {
         public BindingList<Product> productList;
         private BindingSource bindingSource;
+        private SortOrder currentSortOrder = SortOrder.Ascending;
+
 
         public FormProducts()
         {
@@ -27,10 +29,11 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // Привязываем источник данных к DataGridView
             dataGridView_ProductsInfo_DIE.DataSource = bindingSource;
 
-            // Создаем столбцы для каждого свойства класса Product
+            dataGridView_ProductsInfo_DIE.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
         }
 
-       
+
         private void button_AddProduct_DIE_Click(object sender, EventArgs e)
         {
             try
@@ -173,5 +176,51 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
 
         }
 
+        private void SortDataGridViewByColumn(string columnName)
+        {
+            if (currentSortOrder == SortOrder.Ascending)
+            {
+                bindingSource.DataSource = new BindingList<Product>(productList.OrderBy(x => typeof(Product).GetProperty(columnName).GetValue(x)).ToList());
+                currentSortOrder = SortOrder.Descending;
+            }
+            else
+            {
+                bindingSource.DataSource = new BindingList<Product>(productList.OrderByDescending(x => typeof(Product).GetProperty(columnName).GetValue(x)).ToList());
+                currentSortOrder = SortOrder.Ascending;
+            }
+        }
+
+        private void button_Sort_DIE_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sortName = textBox_SortInput_DIE.Text;
+                SortDataGridViewByColumn(sortName);
+            }
+            
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ошибка при вводе данных: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button_DeleteProduct_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_ProductsInfo_DIE.SelectedRows.Count > 0)
+            {
+                // Получите выбранную строку
+                DataGridViewRow selectedRow = dataGridView_ProductsInfo_DIE.SelectedRows[0];
+
+                // Получите объект продукта из выбранной строки
+                Product selectedProduct = (Product)selectedRow.DataBoundItem;
+
+                // Удалите продукт из списка
+                productList.Remove(selectedProduct);
+            }
+            else
+            {
+                MessageBox.Show("Выберите строку для удаления", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

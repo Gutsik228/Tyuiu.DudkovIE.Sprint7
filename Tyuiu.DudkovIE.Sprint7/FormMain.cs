@@ -81,7 +81,6 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_DekstopPanel_DIE.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            Label_Products_DIE.Text = childForm.Text;
         }
 
         private void Button_Home_DIE_Click(object sender, EventArgs e)

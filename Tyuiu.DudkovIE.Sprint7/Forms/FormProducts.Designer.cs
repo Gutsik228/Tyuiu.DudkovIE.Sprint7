@@ -29,6 +29,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProducts));
             this.dataGridView_ProductsInfo_DIE = new System.Windows.Forms.DataGridView();
             this.button_DeleteProduct = new System.Windows.Forms.Button();
             this.button_CorrectProduct = new System.Windows.Forms.Button();
@@ -50,13 +51,15 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_Sort_DIE = new System.Windows.Forms.Button();
             this.textBox_SortInput_DIE = new System.Windows.Forms.TextBox();
             this.label_ColumnSort_DIE = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView_ProductsInfo_DIE
             // 
             this.dataGridView_ProductsInfo_DIE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_ProductsInfo_DIE.Location = new System.Drawing.Point(294, 59);
+            this.dataGridView_ProductsInfo_DIE.Location = new System.Drawing.Point(314, 59);
             this.dataGridView_ProductsInfo_DIE.Name = "dataGridView_ProductsInfo_DIE";
             this.dataGridView_ProductsInfo_DIE.ReadOnly = true;
             this.dataGridView_ProductsInfo_DIE.Size = new System.Drawing.Size(539, 383);
@@ -279,6 +282,15 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.label_ColumnSort_DIE.TabIndex = 60;
             this.label_ColumnSort_DIE.Text = "Столбец";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(326, 464);
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,9 +318,11 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.Controls.Add(this.label_NameProduct_DIE);
             this.Controls.Add(this.textBox_ID_DIE);
             this.Controls.Add(this.label_ID_DIE);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormProducts";
             this.Text = "FormProducts";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +350,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.Button button_Sort_DIE;
         private System.Windows.Forms.TextBox textBox_SortInput_DIE;
         private System.Windows.Forms.Label label_ColumnSort_DIE;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

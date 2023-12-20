@@ -31,6 +31,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
 
             dataGridView_ProductsInfo_DIE.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+            textBox_Search_DIE.TextChanged += textBox_Search_DIE_TextChanged;
         }
 
 
@@ -221,6 +222,33 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             {
                 MessageBox.Show("Выберите строку для удаления", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void SearchInDataGridView(string searchText)
+        {
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                // Если поле поиска пусто, отобразите все данные
+                dataGridView_ProductsInfo_DIE.DataSource = bindingSource;
+            }
+            else
+            {
+                // Иначе выполните поиск и отобразите результаты
+                var searchResults = productList.Where(product =>
+                    product.ID.ToString().Contains(searchText) ||
+                    product.Category.Contains(searchText) ||
+                    product.Name.Contains(searchText) ||
+                    product.Quality.Contains(searchText) ||
+                    product.Price.ToString().Contains(searchText)
+                ).ToList();
+
+                dataGridView_ProductsInfo_DIE.DataSource = new BindingList<Product>(searchResults);
+            }
+        }
+
+        private void textBox_Search_DIE_TextChanged(object sender, EventArgs e)
+        {
+            SearchInDataGridView(textBox_Search_DIE.Text);
         }
     }
 }

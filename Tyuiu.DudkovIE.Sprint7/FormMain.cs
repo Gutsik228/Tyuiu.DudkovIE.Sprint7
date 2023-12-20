@@ -90,7 +90,7 @@ namespace Tyuiu.DudkovIE.Sprint7
 
         private void Button_AboutUs_DIE_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.FormUser(), sender);
         }
 
         private void Button_Help_DIE_Click(object sender, EventArgs e)

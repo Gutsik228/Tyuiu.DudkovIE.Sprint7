@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.DudkovIE.Sprint7.V5", "Tyuiu.DudkovIE.Sprint7\Tyuiu.DudkovIE.Sprint7.V5.csproj", "{8B21AABB-3C48-4BC6-89B7-F8CE9B3A75D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassUser.Lib", "ClassUser\ClassUser.Lib.csproj", "{9B3B89E3-8062-4557-9C87-4A3AC561556B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{ED904625-3BD6-4493-8AE0-DFF68D147DEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B21AABB-3C48-4BC6-89B7-F8CE9B3A75D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B21AABB-3C48-4BC6-89B7-F8CE9B3A75D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B21AABB-3C48-4BC6-89B7-F8CE9B3A75D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B21AABB-3C48-4BC6-89B7-F8CE9B3A75D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3B89E3-8062-4557-9C87-4A3AC561556B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3B89E3-8062-4557-9C87-4A3AC561556B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3B89E3-8062-4557-9C87-4A3AC561556B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3B89E3-8062-4557-9C87-4A3AC561556B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B3B89E3-8062-4557-9C87-4A3AC561556B} = {ED904625-3BD6-4493-8AE0-DFF68D147DEF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {156489CC-AEDE-4ED1-A654-D0E55D4B1CDD}
+	EndGlobalSection
+EndGlobal

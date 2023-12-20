@@ -39,14 +39,14 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_Logo_DIE = new System.Windows.Forms.Panel();
             this.Label_Name_DIE = new System.Windows.Forms.Label();
             this.Panel_TitleBar_DIE = new System.Windows.Forms.Panel();
-            this.Panel_DekstopPanel_DIE = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Panel_DekstopPanel_DIE = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Panel_Main_DIE.SuspendLayout();
             this.Panel_Logo_DIE.SuspendLayout();
             this.Panel_TitleBar_DIE.SuspendLayout();
-            this.Panel_DekstopPanel_DIE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Panel_DekstopPanel_DIE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +104,7 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Button_AboutUs_DIE.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.Button_AboutUs_DIE.Size = new System.Drawing.Size(220, 48);
             this.Button_AboutUs_DIE.TabIndex = 2;
-            this.Button_AboutUs_DIE.Text = "О нас";
+            this.Button_AboutUs_DIE.Text = "Пользователь";
             this.Button_AboutUs_DIE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Button_AboutUs_DIE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_AboutUs_DIE.UseVisualStyleBackColor = true;
@@ -164,6 +164,15 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_TitleBar_DIE.Size = new System.Drawing.Size(864, 80);
             this.Panel_TitleBar_DIE.TabIndex = 1;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(867, 84);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // Panel_DekstopPanel_DIE
             // 
             this.Panel_DekstopPanel_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
@@ -173,15 +182,6 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_DekstopPanel_DIE.Name = "Panel_DekstopPanel_DIE";
             this.Panel_DekstopPanel_DIE.Size = new System.Drawing.Size(864, 470);
             this.Panel_DekstopPanel_DIE.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, -4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(867, 84);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -211,8 +211,8 @@ namespace Tyuiu.DudkovIE.Sprint7
             this.Panel_Logo_DIE.ResumeLayout(false);
             this.Panel_Logo_DIE.PerformLayout();
             this.Panel_TitleBar_DIE.ResumeLayout(false);
-            this.Panel_DekstopPanel_DIE.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Panel_DekstopPanel_DIE.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 

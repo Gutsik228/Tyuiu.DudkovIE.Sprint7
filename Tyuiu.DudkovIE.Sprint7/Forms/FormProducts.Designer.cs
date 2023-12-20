@@ -52,6 +52,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_SortInput_DIE = new System.Windows.Forms.TextBox();
             this.label_ColumnSort_DIE = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +68,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // button_DeleteProduct
             // 
+            this.button_DeleteProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_DeleteProduct.BackgroundImage")));
             this.button_DeleteProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_DeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_DeleteProduct.ForeColor = System.Drawing.Color.White;
@@ -80,6 +82,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // button_CorrectProduct
             // 
+            this.button_CorrectProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_CorrectProduct.BackgroundImage")));
             this.button_CorrectProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_CorrectProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CorrectProduct.ForeColor = System.Drawing.Color.White;
@@ -93,6 +96,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // label_Category_DIE
             // 
             this.label_Category_DIE.AutoSize = true;
+            this.label_Category_DIE.BackColor = System.Drawing.Color.Black;
             this.label_Category_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_Category_DIE.ForeColor = System.Drawing.Color.White;
             this.label_Category_DIE.Location = new System.Drawing.Point(50, 249);
@@ -103,7 +107,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_Price_DIE
             // 
-            this.textBox_Price_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_Price_DIE.BackColor = System.Drawing.Color.Black;
             this.textBox_Price_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_Price_DIE.Location = new System.Drawing.Point(39, 213);
             this.textBox_Price_DIE.Name = "textBox_Price_DIE";
@@ -113,6 +117,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // label_Price
             // 
             this.label_Price.AutoSize = true;
+            this.label_Price.BackColor = System.Drawing.Color.Black;
             this.label_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_Price.ForeColor = System.Drawing.Color.White;
             this.label_Price.Location = new System.Drawing.Point(67, 190);
@@ -123,7 +128,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_QualitiyProduct_DIE
             // 
-            this.textBox_QualitiyProduct_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_QualitiyProduct_DIE.BackColor = System.Drawing.Color.Black;
             this.textBox_QualitiyProduct_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_QualitiyProduct_DIE.Location = new System.Drawing.Point(39, 157);
             this.textBox_QualitiyProduct_DIE.Name = "textBox_QualitiyProduct_DIE";
@@ -133,6 +138,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // label_Quality_DIE
             // 
             this.label_Quality_DIE.AutoSize = true;
+            this.label_Quality_DIE.BackColor = System.Drawing.Color.Black;
             this.label_Quality_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_Quality_DIE.ForeColor = System.Drawing.Color.White;
             this.label_Quality_DIE.Location = new System.Drawing.Point(16, 134);
@@ -143,7 +149,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_NameOfProduct
             // 
-            this.textBox_NameOfProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_NameOfProduct.BackColor = System.Drawing.Color.Black;
             this.textBox_NameOfProduct.ForeColor = System.Drawing.Color.White;
             this.textBox_NameOfProduct.Location = new System.Drawing.Point(39, 99);
             this.textBox_NameOfProduct.Name = "textBox_NameOfProduct";
@@ -153,6 +159,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // label_NameProduct_DIE
             // 
             this.label_NameProduct_DIE.AutoSize = true;
+            this.label_NameProduct_DIE.BackColor = System.Drawing.Color.Black;
             this.label_NameProduct_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_NameProduct_DIE.ForeColor = System.Drawing.Color.White;
             this.label_NameProduct_DIE.Location = new System.Drawing.Point(16, 76);
@@ -163,7 +170,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_ID_DIE
             // 
-            this.textBox_ID_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_ID_DIE.BackColor = System.Drawing.Color.Black;
             this.textBox_ID_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_ID_DIE.Location = new System.Drawing.Point(39, 41);
             this.textBox_ID_DIE.Name = "textBox_ID_DIE";
@@ -173,6 +180,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // label_ID_DIE
             // 
             this.label_ID_DIE.AutoSize = true;
+            this.label_ID_DIE.BackColor = System.Drawing.Color.Black;
             this.label_ID_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_ID_DIE.ForeColor = System.Drawing.Color.White;
             this.label_ID_DIE.Location = new System.Drawing.Point(77, 18);
@@ -183,6 +191,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // button_AddProduct_DIE
             // 
+            this.button_AddProduct_DIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_AddProduct_DIE.BackgroundImage")));
             this.button_AddProduct_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_AddProduct_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_AddProduct_DIE.ForeColor = System.Drawing.Color.White;
@@ -196,6 +205,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // button_OpenFile_DIE
             // 
+            this.button_OpenFile_DIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_OpenFile_DIE.BackgroundImage")));
             this.button_OpenFile_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_OpenFile_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_OpenFile_DIE.ForeColor = System.Drawing.Color.White;
@@ -209,6 +219,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // button_SaveFile_DIE
             // 
+            this.button_SaveFile_DIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_SaveFile_DIE.BackgroundImage")));
             this.button_SaveFile_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_SaveFile_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_SaveFile_DIE.ForeColor = System.Drawing.Color.White;
@@ -222,7 +233,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_Category_DIE
             // 
-            this.textBox_Category_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_Category_DIE.BackColor = System.Drawing.Color.Black;
             this.textBox_Category_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_Category_DIE.Location = new System.Drawing.Point(39, 272);
             this.textBox_Category_DIE.Name = "textBox_Category_DIE";
@@ -231,13 +242,13 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_Search_DIE
             // 
-            this.textBox_Search_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_Search_DIE.BackColor = System.Drawing.Color.Black;
             this.textBox_Search_DIE.ForeColor = System.Drawing.Color.White;
-            this.textBox_Search_DIE.Location = new System.Drawing.Point(314, 22);
+            this.textBox_Search_DIE.Location = new System.Drawing.Point(314, 35);
             this.textBox_Search_DIE.Name = "textBox_Search_DIE";
             this.textBox_Search_DIE.Size = new System.Drawing.Size(100, 20);
             this.textBox_Search_DIE.TabIndex = 56;
-            this.textBox_Search_DIE.Text = "Поиск...";
+            this.textBox_Search_DIE.TextChanged += new System.EventHandler(this.textBox_Search_DIE_TextChanged);
             // 
             // label7
             // 
@@ -251,6 +262,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // button_Sort_DIE
             // 
+            this.button_Sort_DIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Sort_DIE.BackgroundImage")));
             this.button_Sort_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_Sort_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Sort_DIE.ForeColor = System.Drawing.Color.White;
@@ -264,7 +276,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // textBox_SortInput_DIE
             // 
-            this.textBox_SortInput_DIE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.textBox_SortInput_DIE.BackColor = System.Drawing.Color.Black;
             this.textBox_SortInput_DIE.ForeColor = System.Drawing.Color.White;
             this.textBox_SortInput_DIE.Location = new System.Drawing.Point(463, 33);
             this.textBox_SortInput_DIE.Name = "textBox_SortInput_DIE";
@@ -274,6 +286,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // label_ColumnSort_DIE
             // 
             this.label_ColumnSort_DIE.AutoSize = true;
+            this.label_ColumnSort_DIE.BackColor = System.Drawing.Color.Black;
             this.label_ColumnSort_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_ColumnSort_DIE.ForeColor = System.Drawing.Color.White;
             this.label_ColumnSort_DIE.Location = new System.Drawing.Point(474, 9);
@@ -284,19 +297,34 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, -7);
+            this.pictureBox1.Location = new System.Drawing.Point(109, -13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(326, 464);
             this.pictureBox1.TabIndex = 61;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(310, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Поиск";
             // 
             // FormProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(866, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label_ColumnSort_DIE);
             this.Controls.Add(this.textBox_SortInput_DIE);
             this.Controls.Add(this.button_Sort_DIE);
@@ -351,5 +379,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.TextBox textBox_SortInput_DIE;
         private System.Windows.Forms.Label label_ColumnSort_DIE;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

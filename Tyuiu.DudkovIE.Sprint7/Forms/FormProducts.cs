@@ -136,7 +136,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         {
             try
             {
-                string directoryPath = @"C:\Projects\C++ educate\Tyuiu.DudkovIE.Sprint7\Files";
+                string directoryPath = $@"{Directory.GetCurrentDirectory()}";
                 string fileName = "TableOfProducts.csv";
                 string path = Path.Combine(directoryPath, fileName);
 

@@ -31,22 +31,22 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUser));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_Name_DIE = new System.Windows.Forms.Label();
+            this.label_Surname_DIE = new System.Windows.Forms.Label();
+            this.label_Otchestvo = new System.Windows.Forms.Label();
+            this.label_Position_DIE = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_ID_DIE = new System.Windows.Forms.Label();
             this.textBox_ID_DIE = new System.Windows.Forms.TextBox();
-            this.label_NameProduct_DIE = new System.Windows.Forms.Label();
-            this.textBox_NameOfProduct = new System.Windows.Forms.TextBox();
-            this.label_Quality_DIE = new System.Windows.Forms.Label();
-            this.textBox_QualitiyProduct_DIE = new System.Windows.Forms.TextBox();
-            this.label_Price = new System.Windows.Forms.Label();
-            this.textBox_Price_DIE = new System.Windows.Forms.TextBox();
-            this.label_Category_DIE = new System.Windows.Forms.Label();
+            this.textBox_Name_DIE = new System.Windows.Forms.TextBox();
+            this.textBox_Surname_DIE = new System.Windows.Forms.TextBox();
+            this.textBox_otchestvo_DIE = new System.Windows.Forms.TextBox();
             this.button_AddProduct_DIE = new System.Windows.Forms.Button();
             this.button_DeleteProduct = new System.Windows.Forms.Button();
             this.dataGridView_ProductsInfo_DIE = new System.Windows.Forms.DataGridView();
             this.button_OpenFile_DIE = new System.Windows.Forms.Button();
             this.button_SaveFile_DIE = new System.Windows.Forms.Button();
-            this.textBox_Category_DIE = new System.Windows.Forms.TextBox();
+            this.textBox_Position_DIE = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +56,10 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.label_Name_DIE);
+            this.panel1.Controls.Add(this.label_Surname_DIE);
+            this.panel1.Controls.Add(this.label_Otchestvo);
+            this.panel1.Controls.Add(this.label_Position_DIE);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -63,11 +67,59 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.panel1.Size = new System.Drawing.Size(333, 364);
             this.panel1.TabIndex = 0;
             // 
+            // label_Name_DIE
+            // 
+            this.label_Name_DIE.AutoSize = true;
+            this.label_Name_DIE.BackColor = System.Drawing.Color.Black;
+            this.label_Name_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Name_DIE.ForeColor = System.Drawing.Color.White;
+            this.label_Name_DIE.Location = new System.Drawing.Point(23, 70);
+            this.label_Name_DIE.Name = "label_Name_DIE";
+            this.label_Name_DIE.Size = new System.Drawing.Size(40, 20);
+            this.label_Name_DIE.TabIndex = 64;
+            this.label_Name_DIE.Text = "Имя";
+            // 
+            // label_Surname_DIE
+            // 
+            this.label_Surname_DIE.AutoSize = true;
+            this.label_Surname_DIE.BackColor = System.Drawing.Color.Black;
+            this.label_Surname_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Surname_DIE.ForeColor = System.Drawing.Color.White;
+            this.label_Surname_DIE.Location = new System.Drawing.Point(3, 128);
+            this.label_Surname_DIE.Name = "label_Surname_DIE";
+            this.label_Surname_DIE.Size = new System.Drawing.Size(81, 20);
+            this.label_Surname_DIE.TabIndex = 66;
+            this.label_Surname_DIE.Text = "Фамилия";
+            // 
+            // label_Otchestvo
+            // 
+            this.label_Otchestvo.AutoSize = true;
+            this.label_Otchestvo.BackColor = System.Drawing.Color.Black;
+            this.label_Otchestvo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Otchestvo.ForeColor = System.Drawing.Color.White;
+            this.label_Otchestvo.Location = new System.Drawing.Point(6, 184);
+            this.label_Otchestvo.Name = "label_Otchestvo";
+            this.label_Otchestvo.Size = new System.Drawing.Size(83, 20);
+            this.label_Otchestvo.TabIndex = 68;
+            this.label_Otchestvo.Text = "Отчество";
+            // 
+            // label_Position_DIE
+            // 
+            this.label_Position_DIE.AutoSize = true;
+            this.label_Position_DIE.BackColor = System.Drawing.Color.Black;
+            this.label_Position_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Position_DIE.ForeColor = System.Drawing.Color.White;
+            this.label_Position_DIE.Location = new System.Drawing.Point(-4, 243);
+            this.label_Position_DIE.Name = "label_Position_DIE";
+            this.label_Position_DIE.Size = new System.Drawing.Size(95, 20);
+            this.label_Position_DIE.TabIndex = 70;
+            this.label_Position_DIE.Text = "Должность";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-16, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(346, 367);
             this.pictureBox1.TabIndex = 1;
@@ -94,80 +146,32 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_ID_DIE.Size = new System.Drawing.Size(100, 20);
             this.textBox_ID_DIE.TabIndex = 63;
             // 
-            // label_NameProduct_DIE
+            // textBox_Name_DIE
             // 
-            this.label_NameProduct_DIE.AutoSize = true;
-            this.label_NameProduct_DIE.BackColor = System.Drawing.Color.Black;
-            this.label_NameProduct_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_NameProduct_DIE.ForeColor = System.Drawing.Color.White;
-            this.label_NameProduct_DIE.Location = new System.Drawing.Point(-16, 82);
-            this.label_NameProduct_DIE.Name = "label_NameProduct_DIE";
-            this.label_NameProduct_DIE.Size = new System.Drawing.Size(158, 20);
-            this.label_NameProduct_DIE.TabIndex = 64;
-            this.label_NameProduct_DIE.Text = "Название продукта";
+            this.textBox_Name_DIE.BackColor = System.Drawing.Color.Black;
+            this.textBox_Name_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_Name_DIE.Location = new System.Drawing.Point(7, 105);
+            this.textBox_Name_DIE.Name = "textBox_Name_DIE";
+            this.textBox_Name_DIE.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Name_DIE.TabIndex = 65;
             // 
-            // textBox_NameOfProduct
+            // textBox_Surname_DIE
             // 
-            this.textBox_NameOfProduct.BackColor = System.Drawing.Color.Black;
-            this.textBox_NameOfProduct.ForeColor = System.Drawing.Color.White;
-            this.textBox_NameOfProduct.Location = new System.Drawing.Point(7, 105);
-            this.textBox_NameOfProduct.Name = "textBox_NameOfProduct";
-            this.textBox_NameOfProduct.Size = new System.Drawing.Size(100, 20);
-            this.textBox_NameOfProduct.TabIndex = 65;
+            this.textBox_Surname_DIE.BackColor = System.Drawing.Color.Black;
+            this.textBox_Surname_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_Surname_DIE.Location = new System.Drawing.Point(7, 163);
+            this.textBox_Surname_DIE.Name = "textBox_Surname_DIE";
+            this.textBox_Surname_DIE.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Surname_DIE.TabIndex = 67;
             // 
-            // label_Quality_DIE
+            // textBox_otchestvo_DIE
             // 
-            this.label_Quality_DIE.AutoSize = true;
-            this.label_Quality_DIE.BackColor = System.Drawing.Color.Black;
-            this.label_Quality_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Quality_DIE.ForeColor = System.Drawing.Color.White;
-            this.label_Quality_DIE.Location = new System.Drawing.Point(-16, 140);
-            this.label_Quality_DIE.Name = "label_Quality_DIE";
-            this.label_Quality_DIE.Size = new System.Drawing.Size(139, 20);
-            this.label_Quality_DIE.TabIndex = 66;
-            this.label_Quality_DIE.Text = "Качество товара";
-            // 
-            // textBox_QualitiyProduct_DIE
-            // 
-            this.textBox_QualitiyProduct_DIE.BackColor = System.Drawing.Color.Black;
-            this.textBox_QualitiyProduct_DIE.ForeColor = System.Drawing.Color.White;
-            this.textBox_QualitiyProduct_DIE.Location = new System.Drawing.Point(7, 163);
-            this.textBox_QualitiyProduct_DIE.Name = "textBox_QualitiyProduct_DIE";
-            this.textBox_QualitiyProduct_DIE.Size = new System.Drawing.Size(100, 20);
-            this.textBox_QualitiyProduct_DIE.TabIndex = 67;
-            // 
-            // label_Price
-            // 
-            this.label_Price.AutoSize = true;
-            this.label_Price.BackColor = System.Drawing.Color.Black;
-            this.label_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Price.ForeColor = System.Drawing.Color.White;
-            this.label_Price.Location = new System.Drawing.Point(35, 196);
-            this.label_Price.Name = "label_Price";
-            this.label_Price.Size = new System.Drawing.Size(48, 20);
-            this.label_Price.TabIndex = 68;
-            this.label_Price.Text = "Цена";
-            // 
-            // textBox_Price_DIE
-            // 
-            this.textBox_Price_DIE.BackColor = System.Drawing.Color.Black;
-            this.textBox_Price_DIE.ForeColor = System.Drawing.Color.White;
-            this.textBox_Price_DIE.Location = new System.Drawing.Point(7, 219);
-            this.textBox_Price_DIE.Name = "textBox_Price_DIE";
-            this.textBox_Price_DIE.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Price_DIE.TabIndex = 69;
-            // 
-            // label_Category_DIE
-            // 
-            this.label_Category_DIE.AutoSize = true;
-            this.label_Category_DIE.BackColor = System.Drawing.Color.Black;
-            this.label_Category_DIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Category_DIE.ForeColor = System.Drawing.Color.White;
-            this.label_Category_DIE.Location = new System.Drawing.Point(18, 255);
-            this.label_Category_DIE.Name = "label_Category_DIE";
-            this.label_Category_DIE.Size = new System.Drawing.Size(89, 20);
-            this.label_Category_DIE.TabIndex = 70;
-            this.label_Category_DIE.Text = "Категория";
+            this.textBox_otchestvo_DIE.BackColor = System.Drawing.Color.Black;
+            this.textBox_otchestvo_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_otchestvo_DIE.Location = new System.Drawing.Point(7, 219);
+            this.textBox_otchestvo_DIE.Name = "textBox_otchestvo_DIE";
+            this.textBox_otchestvo_DIE.Size = new System.Drawing.Size(100, 20);
+            this.textBox_otchestvo_DIE.TabIndex = 69;
             // 
             // button_AddProduct_DIE
             // 
@@ -181,6 +185,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_AddProduct_DIE.TabIndex = 71;
             this.button_AddProduct_DIE.Text = "ДОБАВИТЬ";
             this.button_AddProduct_DIE.UseVisualStyleBackColor = true;
+            this.button_AddProduct_DIE.Click += new System.EventHandler(this.button_AddProduct_DIE_Click);
             // 
             // button_DeleteProduct
             // 
@@ -194,6 +199,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_DeleteProduct.TabIndex = 73;
             this.button_DeleteProduct.Text = "УДАЛИТЬ";
             this.button_DeleteProduct.UseVisualStyleBackColor = true;
+            this.button_DeleteProduct.Click += new System.EventHandler(this.button_DeleteProduct_Click);
             // 
             // dataGridView_ProductsInfo_DIE
             // 
@@ -216,6 +222,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_OpenFile_DIE.TabIndex = 75;
             this.button_OpenFile_DIE.Text = "ОТКРЫТЬ ФАЙЛ";
             this.button_OpenFile_DIE.UseVisualStyleBackColor = true;
+            this.button_OpenFile_DIE.Click += new System.EventHandler(this.button_OpenFile_DIE_Click);
             // 
             // button_SaveFile_DIE
             // 
@@ -229,15 +236,16 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_SaveFile_DIE.TabIndex = 76;
             this.button_SaveFile_DIE.Text = "СОХРАНИТЬ ФАЙЛ";
             this.button_SaveFile_DIE.UseVisualStyleBackColor = true;
+            this.button_SaveFile_DIE.Click += new System.EventHandler(this.button_SaveFile_DIE_Click);
             // 
-            // textBox_Category_DIE
+            // textBox_Position_DIE
             // 
-            this.textBox_Category_DIE.BackColor = System.Drawing.Color.Black;
-            this.textBox_Category_DIE.ForeColor = System.Drawing.Color.White;
-            this.textBox_Category_DIE.Location = new System.Drawing.Point(7, 278);
-            this.textBox_Category_DIE.Name = "textBox_Category_DIE";
-            this.textBox_Category_DIE.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Category_DIE.TabIndex = 77;
+            this.textBox_Position_DIE.BackColor = System.Drawing.Color.Black;
+            this.textBox_Position_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_Position_DIE.Location = new System.Drawing.Point(7, 278);
+            this.textBox_Position_DIE.Name = "textBox_Position_DIE";
+            this.textBox_Position_DIE.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Position_DIE.TabIndex = 77;
             // 
             // label7
             // 
@@ -258,23 +266,20 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.Controls.Add(this.button_DeleteProduct);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button_AddProduct_DIE);
-            this.Controls.Add(this.textBox_Category_DIE);
+            this.Controls.Add(this.textBox_Position_DIE);
             this.Controls.Add(this.button_SaveFile_DIE);
             this.Controls.Add(this.button_OpenFile_DIE);
             this.Controls.Add(this.dataGridView_ProductsInfo_DIE);
-            this.Controls.Add(this.label_Category_DIE);
-            this.Controls.Add(this.textBox_Price_DIE);
-            this.Controls.Add(this.label_Price);
-            this.Controls.Add(this.textBox_QualitiyProduct_DIE);
-            this.Controls.Add(this.label_Quality_DIE);
-            this.Controls.Add(this.textBox_NameOfProduct);
-            this.Controls.Add(this.label_NameProduct_DIE);
+            this.Controls.Add(this.textBox_otchestvo_DIE);
+            this.Controls.Add(this.textBox_Surname_DIE);
+            this.Controls.Add(this.textBox_Name_DIE);
             this.Controls.Add(this.textBox_ID_DIE);
             this.Controls.Add(this.label_ID_DIE);
             this.Controls.Add(this.panel1);
             this.Name = "FormUser";
             this.Text = "FormUser";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).EndInit();
             this.ResumeLayout(false);
@@ -288,19 +293,19 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_ID_DIE;
         private System.Windows.Forms.TextBox textBox_ID_DIE;
-        private System.Windows.Forms.Label label_NameProduct_DIE;
-        private System.Windows.Forms.TextBox textBox_NameOfProduct;
-        private System.Windows.Forms.Label label_Quality_DIE;
-        private System.Windows.Forms.TextBox textBox_QualitiyProduct_DIE;
-        private System.Windows.Forms.Label label_Price;
-        private System.Windows.Forms.TextBox textBox_Price_DIE;
-        private System.Windows.Forms.Label label_Category_DIE;
+        private System.Windows.Forms.Label label_Name_DIE;
+        private System.Windows.Forms.TextBox textBox_Name_DIE;
+        private System.Windows.Forms.Label label_Surname_DIE;
+        private System.Windows.Forms.TextBox textBox_Surname_DIE;
+        private System.Windows.Forms.Label label_Otchestvo;
+        private System.Windows.Forms.TextBox textBox_otchestvo_DIE;
+        private System.Windows.Forms.Label label_Position_DIE;
         private System.Windows.Forms.Button button_AddProduct_DIE;
         private System.Windows.Forms.Button button_DeleteProduct;
         private System.Windows.Forms.DataGridView dataGridView_ProductsInfo_DIE;
         private System.Windows.Forms.Button button_OpenFile_DIE;
         private System.Windows.Forms.Button button_SaveFile_DIE;
-        private System.Windows.Forms.TextBox textBox_Category_DIE;
+        private System.Windows.Forms.TextBox textBox_Position_DIE;
         private System.Windows.Forms.Label label7;
     }
 }

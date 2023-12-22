@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Tyuiu.DudkovIE.Sprint7.V5.Lib;
 
 namespace Tyuiu.DudkovIE.Sprint7.Forms
 {
@@ -16,7 +17,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         public BindingList<Product> productList;
         private BindingSource bindingSource;
         private SortOrder currentSortOrder = SortOrder.Ascending;
-
 
         public FormProducts()
         {
@@ -33,7 +33,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
 
             textBox_Search_DIE.TextChanged += textBox_Search_DIE_TextChanged;
         }
-
 
         private void button_AddProduct_DIE_Click(object sender, EventArgs e)
         {
@@ -106,7 +105,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
                 MessageBox.Show("Ошибка при открытии файла: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         public class Product
         {
             public int ID { get; set; }
@@ -130,7 +128,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
                 Price = price;
             }
         }
-
 
         private void button_SaveFile_DIE_Click(object sender, EventArgs e)
         {
@@ -209,13 +206,13 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         {
             if (dataGridView_ProductsInfo_DIE.SelectedRows.Count > 0)
             {
-                // Получите выбранную строку
+                // Получить выбранную строку
                 DataGridViewRow selectedRow = dataGridView_ProductsInfo_DIE.SelectedRows[0];
 
-                // Получите объект продукта из выбранной строки
+                // Получить объект продукта из выбранной строки
                 Product selectedProduct = (Product)selectedRow.DataBoundItem;
 
-                // Удалите продукт из списка
+                // Удалить продукт из списка
                 productList.Remove(selectedProduct);
             }
             else
@@ -228,12 +225,12 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         {
             if (string.IsNullOrWhiteSpace(searchText))
             {
-                // Если поле поиска пусто, отобразите все данные
+                // Если поле поиска пусто, отобразить все данные
                 dataGridView_ProductsInfo_DIE.DataSource = bindingSource;
             }
             else
             {
-                // Иначе выполните поиск и отобразите результаты
+                // Иначе выполните поиск и отобразить результаты
                 var searchResults = productList.Where(product =>
                     product.ID.ToString().Contains(searchText) ||
                     product.Category.Contains(searchText) ||
@@ -249,6 +246,48 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private void textBox_Search_DIE_TextChanged(object sender, EventArgs e)
         {
             SearchInDataGridView(textBox_Search_DIE.Text);
+        }
+
+        public int[] GetPrices(Product[] products)
+        {
+            // Проверяем, есть ли хотя бы один товар в массиве
+            if (products.Any())
+            {
+                // Инициализируем массив для хранения стоимостей
+                int[] prices = new int[products.Length];
+
+                // Индекс для заполнения массива
+                int index = 0;
+
+                // Проходим по всем товарам в массиве
+                foreach (var product in products)
+                {
+                    // Добавляем стоимость товара в массив
+                    prices[index] = product.Price;
+
+                    // Увеличиваем индекс
+                    index++;
+                }
+
+                return prices;
+            }
+
+            // Если массив товаров пуст, возвращаем пустой массив стоимостей
+            return new int[0];
+        }
+        private void button_MaxCost_DIE_Click(object sender, EventArgs e)
+        {
+            FindMax fidmax = new FindMax();
+            try
+            {
+                int[] prices = GetPrices(productList.ToArray());
+                int maxCost = fidmax.FindMaxPrice(prices);
+                textBox_MaxCost_DIE.Text = maxCost.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при поиске максимальной цены: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

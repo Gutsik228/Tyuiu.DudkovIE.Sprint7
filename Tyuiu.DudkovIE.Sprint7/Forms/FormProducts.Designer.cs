@@ -32,7 +32,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProducts));
             this.dataGridView_ProductsInfo_DIE = new System.Windows.Forms.DataGridView();
             this.button_DeleteProduct = new System.Windows.Forms.Button();
-            this.button_CorrectProduct = new System.Windows.Forms.Button();
             this.label_Category_DIE = new System.Windows.Forms.Label();
             this.textBox_Price_DIE = new System.Windows.Forms.TextBox();
             this.label_Price = new System.Windows.Forms.Label();
@@ -53,6 +52,8 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.label_ColumnSort_DIE = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button_MaxCost_DIE = new System.Windows.Forms.Button();
+            this.textBox_MaxCost_DIE = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -79,19 +80,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.button_DeleteProduct.Text = "УДАЛИТЬ";
             this.button_DeleteProduct.UseVisualStyleBackColor = true;
             this.button_DeleteProduct.Click += new System.EventHandler(this.button_DeleteProduct_Click);
-            // 
-            // button_CorrectProduct
-            // 
-            this.button_CorrectProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_CorrectProduct.BackgroundImage")));
-            this.button_CorrectProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button_CorrectProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_CorrectProduct.ForeColor = System.Drawing.Color.White;
-            this.button_CorrectProduct.Location = new System.Drawing.Point(696, 7);
-            this.button_CorrectProduct.Name = "button_CorrectProduct";
-            this.button_CorrectProduct.Size = new System.Drawing.Size(137, 48);
-            this.button_CorrectProduct.TabIndex = 46;
-            this.button_CorrectProduct.Text = "РЕДАКТИРОВАТЬ";
-            this.button_CorrectProduct.UseVisualStyleBackColor = true;
             // 
             // label_Category_DIE
             // 
@@ -317,6 +305,29 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.label1.TabIndex = 62;
             this.label1.Text = "Поиск";
             // 
+            // button_MaxCost_DIE
+            // 
+            this.button_MaxCost_DIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_MaxCost_DIE.BackgroundImage")));
+            this.button_MaxCost_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_MaxCost_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_MaxCost_DIE.ForeColor = System.Drawing.Color.White;
+            this.button_MaxCost_DIE.Location = new System.Drawing.Point(678, 28);
+            this.button_MaxCost_DIE.Name = "button_MaxCost_DIE";
+            this.button_MaxCost_DIE.Size = new System.Drawing.Size(103, 25);
+            this.button_MaxCost_DIE.TabIndex = 63;
+            this.button_MaxCost_DIE.Text = "МАКС ЦЕНА";
+            this.button_MaxCost_DIE.UseVisualStyleBackColor = true;
+            this.button_MaxCost_DIE.Click += new System.EventHandler(this.button_MaxCost_DIE_Click);
+            // 
+            // textBox_MaxCost_DIE
+            // 
+            this.textBox_MaxCost_DIE.BackColor = System.Drawing.Color.Black;
+            this.textBox_MaxCost_DIE.ForeColor = System.Drawing.Color.White;
+            this.textBox_MaxCost_DIE.Location = new System.Drawing.Point(787, 28);
+            this.textBox_MaxCost_DIE.Name = "textBox_MaxCost_DIE";
+            this.textBox_MaxCost_DIE.Size = new System.Drawing.Size(76, 20);
+            this.textBox_MaxCost_DIE.TabIndex = 64;
+            // 
             // FormProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,6 +335,8 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(866, 450);
+            this.Controls.Add(this.textBox_MaxCost_DIE);
+            this.Controls.Add(this.button_MaxCost_DIE);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_ColumnSort_DIE);
             this.Controls.Add(this.textBox_SortInput_DIE);
@@ -335,7 +348,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.Controls.Add(this.button_OpenFile_DIE);
             this.Controls.Add(this.dataGridView_ProductsInfo_DIE);
             this.Controls.Add(this.button_DeleteProduct);
-            this.Controls.Add(this.button_CorrectProduct);
             this.Controls.Add(this.button_AddProduct_DIE);
             this.Controls.Add(this.label_Category_DIE);
             this.Controls.Add(this.textBox_Price_DIE);
@@ -359,7 +371,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         #endregion
         private System.Windows.Forms.DataGridView dataGridView_ProductsInfo_DIE;
         private System.Windows.Forms.Button button_DeleteProduct;
-        private System.Windows.Forms.Button button_CorrectProduct;
         private System.Windows.Forms.Label label_Category_DIE;
         private System.Windows.Forms.TextBox textBox_Price_DIE;
         private System.Windows.Forms.Label label_Price;
@@ -380,5 +391,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.Label label_ColumnSort_DIE;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_MaxCost_DIE;
+        private System.Windows.Forms.TextBox textBox_MaxCost_DIE;
     }
 }

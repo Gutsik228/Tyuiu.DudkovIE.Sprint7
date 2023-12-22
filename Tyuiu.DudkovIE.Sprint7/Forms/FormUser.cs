@@ -176,13 +176,13 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         {
             if (dataGridView_ProductsInfo_DIE.SelectedRows.Count > 0)
             {
-                // Получите выбранную строку
+                // Получить выбранную строку
                 DataGridViewRow selectedRow = dataGridView_ProductsInfo_DIE.SelectedRows[0];
 
-                // Получите объект продукта из выбранной строки
+                // Получить объект продукта из выбранной строки
                 Product selectedProduct = (Product)selectedRow.DataBoundItem;
 
-                // Удалите продукт из списка
+                // Удалить продукт из списка
                 productList.Remove(selectedProduct);
             }
             else
@@ -191,6 +191,4 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             }
         }
     }
-
-   
 }

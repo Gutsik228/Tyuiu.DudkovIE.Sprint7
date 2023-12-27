@@ -54,6 +54,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.button_MaxCost_DIE = new System.Windows.Forms.Button();
             this.textBox_MaxCost_DIE = new System.Windows.Forms.TextBox();
+            this.button_Charts_DIE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ProductsInfo_DIE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -328,6 +329,20 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.textBox_MaxCost_DIE.Size = new System.Drawing.Size(76, 20);
             this.textBox_MaxCost_DIE.TabIndex = 64;
             // 
+            // button_Charts_DIE
+            // 
+            this.button_Charts_DIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_Charts_DIE.BackgroundImage")));
+            this.button_Charts_DIE.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_Charts_DIE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Charts_DIE.ForeColor = System.Drawing.Color.White;
+            this.button_Charts_DIE.Location = new System.Drawing.Point(148, 244);
+            this.button_Charts_DIE.Name = "button_Charts_DIE";
+            this.button_Charts_DIE.Size = new System.Drawing.Size(103, 48);
+            this.button_Charts_DIE.TabIndex = 65;
+            this.button_Charts_DIE.Text = "ГРАФИКИ";
+            this.button_Charts_DIE.UseVisualStyleBackColor = true;
+            this.button_Charts_DIE.Click += new System.EventHandler(this.button_Charts_DIE_Click);
+            // 
             // FormProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,6 +350,7 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(87)))), ((int)(((byte)(100)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(866, 450);
+            this.Controls.Add(this.button_Charts_DIE);
             this.Controls.Add(this.textBox_MaxCost_DIE);
             this.Controls.Add(this.button_MaxCost_DIE);
             this.Controls.Add(this.label1);
@@ -393,5 +409,6 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_MaxCost_DIE;
         private System.Windows.Forms.TextBox textBox_MaxCost_DIE;
+        private System.Windows.Forms.Button button_Charts_DIE;
     }
 }

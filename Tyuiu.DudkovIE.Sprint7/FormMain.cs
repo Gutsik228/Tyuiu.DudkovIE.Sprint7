@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Tyuiu.DudkovIE.Sprint7
 {
-    
     public partial class FormMain : Form
     {
         private Button currentButton;
         private Random random;
         private int tempIndex;
         private Form ActiveForm;
+
         public FormMain()
         {
             InitializeComponent();
@@ -97,5 +97,6 @@ namespace Tyuiu.DudkovIE.Sprint7
         {
             OpenChildForm(new Forms.FormHelp(), sender);
         }
+
     }
 }

@@ -289,5 +289,14 @@ namespace Tyuiu.DudkovIE.Sprint7.Forms
                 MessageBox.Show("Ошибка при поиске максимальной цены: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button_Charts_DIE_Click(object sender, EventArgs e)
+        {
+            int[] prices = productList.Select(product => product.Price).ToArray();
+
+            Charts charts = new Charts(prices);
+
+            charts.ShowDialog();
+        }
     }
 }
